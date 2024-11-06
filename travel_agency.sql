@@ -74,6 +74,7 @@ CREATE TABLE customer (
   home_address VARCHAR(90),
   telephone_no VARCHAR(30) NOT NULL,
   email VARCHAR(40) NOT NULL,
+  password VARCHAR(255) NOT NULL,
   purpose_of_travel VARCHAR(60) NOT NULL,
   date_of_passport DATE NOT NULL,
   passport_no VARCHAR(30) NOT NULL,
@@ -88,6 +89,7 @@ CREATE TABLE customer (
   visa_no VARCHAR(30),
   date_of_insertion TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   inserted_by VARCHAR(11) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (customer_id),
   UNIQUE KEY (passport_no)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=104;
