@@ -2,7 +2,7 @@
 session_start(); // Start the session
 
 // Include the database connection
-include('connection/connection.php');
+include('admin/connection/connection.php');
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
